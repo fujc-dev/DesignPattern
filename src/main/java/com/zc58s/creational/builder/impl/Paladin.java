@@ -1,6 +1,6 @@
-package com.zc58s.builder.impl;
+package com.zc58s.creational.builder.impl;
 
-import com.zc58s.builder.Builder;
+import com.zc58s.creational.builder.Builder;
 
 /*
  * @description :

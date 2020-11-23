@@ -1,25 +1,24 @@
-package com.zc58s.builder.impl;
+package com.zc58s.creational.builder.impl;
 
-import com.zc58s.builder.Builder;
+import com.zc58s.creational.builder.Builder;
 
 /*
  * @description :
  *
- * 猎人
+ * 盗贼
  * @author      : fjc.dane@gmail.com
  * @create time : 2020/11/20 10:09
  */
-public class Hunter extends Builder {
-
+public class Thief extends Builder {
     public String buildFace() {
-        return "猎人脸";
+        return "盗贼脸";
     }
 
     public String buildClothes() {
-        return "猎人服饰";
+        return "盗贼服饰";
     }
 
     public String buildHairStyle() {
-        return "猎人发型";
+        return "盗贼发型";
     }
 }

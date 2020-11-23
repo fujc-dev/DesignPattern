@@ -1,4 +1,4 @@
-package com.zc58s.builder;
+package com.zc58s.creational.builder;
 
 /*
  * 指挥者，这各对象就是用来对外输出
@@ -25,7 +25,7 @@ public class Director {
         Class<?> classloader = null;
         Builder builder = null;
         try {
-            classloader = Class.forName("com.zc58s.builder.impl." + roleName);
+            classloader = Class.forName("com.zc58s.creational.builder.impl." + roleName);
             builder = (T) classloader.newInstance();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

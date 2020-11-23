@@ -1,4 +1,4 @@
-package com.zc58s.prototype;
+package com.zc58s.creational.prototype;
 
 /*
  * @description :

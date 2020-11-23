@@ -1,8 +1,8 @@
-package com.zc58s.bridge;
+package com.zc58s.structural.bridge;
 
-import com.zc58s.bridge.services.AbstractColor;
-import com.zc58s.bridge.services.AbstractPen;
-import com.zc58s.bridge.services.impl.*;
+import com.zc58s.structural.bridge.services.AbstractColor;
+import com.zc58s.structural.bridge.services.AbstractPen;
+import com.zc58s.structural.bridge.services.impl.*;
 
 /*
  * 桥连模式：连接抽象部分与实现部分

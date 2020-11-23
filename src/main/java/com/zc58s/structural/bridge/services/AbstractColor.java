@@ -1,4 +1,4 @@
-package com.zc58s.bridge.services;
+package com.zc58s.structural.bridge.services;
 
 /*
  * @description :

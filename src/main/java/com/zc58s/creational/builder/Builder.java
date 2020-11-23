@@ -1,4 +1,4 @@
-package com.zc58s.builder;
+package com.zc58s.creational.builder;
 
 /*
  * 建造者，这玩意儿会建造面容、服饰、发型等，那么在这个抽象类{@link Builder}中，

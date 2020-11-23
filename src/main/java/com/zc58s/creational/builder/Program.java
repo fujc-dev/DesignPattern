@@ -1,6 +1,6 @@
-package com.zc58s.builder;
+package com.zc58s.creational.builder;
 
-import com.zc58s.builder.impl.DeathKnight;
+import com.zc58s.creational.builder.impl.DeathKnight;
 
 /*
  * 概述：

@@ -1,6 +1,4 @@
-package com.zc58s.prototype;
-
-import java.io.IOException;
+package com.zc58s.creational.prototype;
 
 /*
  * 概述：

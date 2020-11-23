@@ -1,7 +1,7 @@
-package com.zc58s.bridge.services.impl;
+package com.zc58s.structural.bridge.services.impl;
 
-import com.zc58s.bridge.services.AbstractColor;
-import com.zc58s.bridge.services.AbstractPen;
+import com.zc58s.structural.bridge.services.AbstractColor;
+import com.zc58s.structural.bridge.services.AbstractPen;
 
 /*
  * 铅笔画笔
