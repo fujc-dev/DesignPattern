@@ -59,27 +59,27 @@ import com.zc58s.creational.abstractfactory.scenario1.ScenarioFactory;
 public class Program {
 
     public static void main(String[] args) {
-//        CarFactory factory = new ScenarioFactory();
-//        factory.getAudi().display();
-//        factory.getBenz().display();
-//        factory.getBMW().display();
-//        System.out.println("----------------------------------");
-//
-//        factory = new com.zc58s.creational.abstractfactory.scenario2.ScenarioFactory();
-//        factory.getAudi().display();
-//        factory.getBenz().display();
-//        factory.getBMW().display();
-//        System.out.println("----------------------------------");
-//
-//        factory = new com.zc58s.creational.abstractfactory.scenario3.ScenarioFactory();
-//        factory.getAudi().display();
-//        factory.getBenz().display();
-//        factory.getBMW().display();
-
-        //抽象工厂 + 简单工厂 混合使用
-        CarFactory factory = FactoryHelper.getFactory("com.zc58s.creational.abstractfactory.scenario2.ScenarioFactory");
+        CarFactory factory = new ScenarioFactory();
         factory.getAudi().display();
         factory.getBenz().display();
         factory.getBMW().display();
+        System.out.println("----------------------------------");
+
+        factory = new com.zc58s.creational.abstractfactory.scenario2.ScenarioFactory();
+        factory.getAudi().display();
+        factory.getBenz().display();
+        factory.getBMW().display();
+        System.out.println("----------------------------------");
+
+        factory = new com.zc58s.creational.abstractfactory.scenario3.ScenarioFactory();
+        factory.getAudi().display();
+        factory.getBenz().display();
+        factory.getBMW().display();
+
+        //抽象工厂 + 简单工厂 混合使用
+        CarFactory factory1 = FactoryHelper.getFactory("com.zc58s.creational.abstractfactory.scenario2.ScenarioFactory");
+        factory1.getAudi().display();
+        factory1.getBenz().display();
+        factory1.getBMW().display();
     }
 }
