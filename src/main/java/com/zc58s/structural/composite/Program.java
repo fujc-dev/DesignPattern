@@ -10,7 +10,10 @@ import com.zc58s.structural.composite.prototype.Leaf;
 
 /*
  * 概述：
- *
+ * 只要是涉及到树形结构的设计时，采用组合模式基本上都是没毛病的。
+ * 文件夹+文件
+ * 公司+部门+小组
+ * 层级关系都是包含关系的，不可被取代的。
  *
  *
  * @author      : fjc.dane@gmail.com
@@ -21,7 +24,7 @@ public class Program {
         //总文件夹
         Folder zwjj = new Folder("总文件夹");
         //向总文件夹中放入三个文件：1.txt、2.jpg、1文件夹
-        TextFile aText= new TextFile("a.txt");
+        TextFile aText = new TextFile("a.txt");
         ImageFile bImager = new ImageFile("b.jpg");
         Folder cFolder = new Folder("C文件夹");
 
@@ -44,7 +47,6 @@ public class Program {
         cFolder.remove(cText);
         System.out.println("-----------------------");
         cFolder.KillVirus();
-
 
 
         System.out.println("##############################################");
