@@ -1,4 +1,4 @@
-package com.zc58s.behavior;
+package com.zc58s.behavior.command;
 
 /*
  * @description :
