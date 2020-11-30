@@ -1,4 +1,4 @@
-package com.zc58s.structural.facede;
+package com.zc58s.structural.facede.simple;
 
 /*
  * @description :

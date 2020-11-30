@@ -1,5 +1,7 @@
 package com.zc58s.structural.facede;
 
+import com.zc58s.structural.facede.simple.*;
+
 /*
  * @description :
  * 概述：
@@ -24,11 +26,16 @@ public class Program {
         systemC.println();
         SubSystemD systemD =new SubSystemD();
         systemD.println();
-        System.out.println("===============与子系统常规对接begin===============");
+        System.out.println("===============与子系统常规对接end===============");
 
 
+        System.out.println("===============与子系统Facede对接begin===============");
         Facede facede = new Facede();
         facede.businessLogin();
+
+        EncryptFacade  encryptFacade = new EncryptFacade();
+        encryptFacade.FileEncrypt();
+        System.out.println("===============与子系统Facede对接end===============");
 
     }
 }
