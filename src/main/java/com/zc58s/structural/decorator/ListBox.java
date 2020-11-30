@@ -8,6 +8,7 @@ package com.zc58s.structural.decorator;
  * @create time : 2020/11/25 17:05
  */
 public class ListBox extends  VisualComponent {
+
     public void display() {
         System.out.println("this is ListBox!");
     }
