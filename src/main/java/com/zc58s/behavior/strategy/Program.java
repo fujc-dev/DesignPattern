@@ -18,7 +18,16 @@ public class Program {
 
         double originalPrice = 60.0;
         double currentPrice;
-        Ticket mt = Builder.builder().builder(originalPrice).builder(new ChildrenDiscountStrategy()).getContext();
+        Ticket mt = Builder.builder()
+                .builder(originalPrice)
+                .builder(new ChildrenDiscountStrategy())
+                .getContext();
+        mt = Builder.builder(originalPrice, new Strategy() {
+            @Override
+            public double calculate(double price) {
+                return price * 0.1;
+            }
+        });
         Console.WriteLine("原始价为：" + originalPrice);
         Console.WriteLine("---------------------------------");
         Console.WriteLine("折后价为：" + mt.getPrice());

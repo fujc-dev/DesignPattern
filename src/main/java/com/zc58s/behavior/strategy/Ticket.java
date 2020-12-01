@@ -12,9 +12,6 @@ public class Ticket {
     private Strategy strategy;
 
 
-
-
-
     public void setPrice(double price) {
         this.price = price;
     }
@@ -30,4 +27,5 @@ public class Ticket {
     public void setStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
+
 }
