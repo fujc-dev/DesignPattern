@@ -1,4 +1,4 @@
-package com.zc58s.structural.decorator;
+package com.zc58s.structural.decorator.simple;
 
 /*
  * @description :
