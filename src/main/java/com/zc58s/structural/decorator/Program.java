@@ -8,6 +8,9 @@ import com.zc58s.structural.decorator.simple.Window;
 
 /*
  *
+ * 代理模式：在执行方法前或后，实现方法的增强处理，并且隐藏具体的方法，保证安全之类的；
+ * 装饰模式：不改变原有功能的前提下，实现对方法的增强处理，可以不断的新增新的增强处理，执行顺序与类传递顺序有关系，
+ * 每一个装饰是有关联关系的；
  *
  *
  * @author      : fjc.dane@gmail.com
