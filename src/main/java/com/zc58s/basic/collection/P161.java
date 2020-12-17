@@ -1,7 +1,8 @@
-package com.zc58s.basic;
+package com.zc58s.basic.collection;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Objects;
 
 /*
  * 哈希表又叫散列表，哈希表底层是一个数组，数组内部是一个单向链表，每一个单向链表都有一个hashCode，
@@ -22,11 +23,10 @@ public class P161 {
 
 
         User u1 = new User(1, "张三");
-        User u2 = new User(1, "张三");
+        User u2 = new User(2, "张三");
         sets.add(u1);
-        sets.forEach((u) -> {
-            System.out.println(u);
-        });
+        sets.add(u2);
+
         Iterator<User> iterator = sets.iterator();
         while (iterator.hasNext()) {
             User user = iterator.next();
@@ -59,6 +59,19 @@ public class P161 {
 
         public void setUsername(String username) {
             this.username = username;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof User)) return false;
+            User user = (User) o;
+            return getNo() == user.getNo() && Objects.equals(getUsername(), user.getUsername());
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(getNo(), getUsername());
         }
 
         @Override

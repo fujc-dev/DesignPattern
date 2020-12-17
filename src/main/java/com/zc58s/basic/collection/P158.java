@@ -1,4 +1,4 @@
-package com.zc58s.basic;
+package com.zc58s.basic.collection;
 
 
 import java.util.ArrayList;
