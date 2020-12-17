@@ -26,6 +26,7 @@ public class P182 {
         //      System.out.println(temp);
         //  }
         //is.read() 频繁访问磁盘，并且是每读一次返回一个字节的方式读取，访问效率低下
+        /*
         byte[] buffer = new byte[3];  //每次最多读三个字节
         int temp1 = is.read(buffer);
         System.out.println(new String(buffer));
@@ -40,6 +41,28 @@ public class P182 {
         System.out.println(temp2);
         System.out.println(temp3);
         System.out.println(temp4);
+
+        */
+
+
+        /*
+        byte[] bytes = new byte[1024];
+        while (true) {
+            int temp = is.read(bytes);
+            if (temp == -1) break;
+            System.out.println(new String(bytes, 0, temp));
+            System.out.println("===================");
+        }
+        */
+
+        //升级循环
+        byte[] bytes = new byte[1024];
+        int temp = 0;
+        while ((temp = is.read(bytes))!=-1){
+            System.out.println(new String(bytes, 0, temp));
+            System.out.println("===================");
+        }
+
         is.close();
     }
 }
