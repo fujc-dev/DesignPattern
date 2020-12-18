@@ -58,11 +58,11 @@ public class P182 {
         //升级循环
         byte[] bytes = new byte[1024];
         int temp = 0;
-        while ((temp = is.read(bytes))!=-1){
+        while ((temp = is.read(bytes)) != -1) {
             System.out.println(new String(bytes, 0, temp));
             System.out.println("===================");
         }
 
-        is.close();
+        if (is != null) is.close();
     }
 }

@@ -11,7 +11,43 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor"))
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
     quid       	"5FDAFFF10184"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -109,6 +145,11 @@
 			quidu      	"5FDB01200202")))
 	    (object Class "FileReader"
 		quid       	"5FDB015503D6"
+		superclasses 	(list inheritance_relationship_list
+		    (object Inheritance_Relationship
+			quid       	"5FDC2281037E"
+			supplier   	"Logical View::InputStreamReader"
+			quidu      	"5FDB01460346"))
 		realized_interfaces 	(list realize_rel_list
 		    (object Realize_Relationship
 			quid       	"5FDB016102B1"
@@ -334,7 +375,7 @@
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(875, 1063)
+			location   	(1150, 1159)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -346,7 +387,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@8
-			    location   	(683, 1012)
+			    location   	(958, 1108)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	384
@@ -364,7 +405,7 @@
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(618, 1378)
+			location   	(1151, 1478)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -376,7 +417,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@9
-			    location   	(501, 1327)
+			    location   	(1034, 1427)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	234
@@ -397,24 +438,14 @@
 			client     	@8
 			supplier   	@3
 			vertices   	(list Points
-			    (954, 999)
-			    (1069, 906))
+			    (1150, 1095)
+			    (1151, 906))
 			line_style 	0)
-		    (object RealizeView "" @11
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"5FDB016102B1"
-			client     	@9
-			supplier   	@8
-			vertices   	(list Points
-			    (669, 1314)
-			    (822, 1126))
-			line_style 	0)
-		    (object ClassView "Class" "Logical View::OutputStreamWriter" @12
+		    (object ClassView "Class" "Logical View::OutputStreamWriter" @11
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(2851, 1246)
+			location   	(2855, 1259)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -425,8 +456,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@12
-			    location   	(2652, 1195)
+			    Parent_View 	@11
+			    location   	(2656, 1208)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	398
@@ -440,11 +471,11 @@
 			height     	126
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::FileWriter" @13
+		    (object ClassView "Class" "Logical View::FileWriter" @12
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(2849, 1628)
+			location   	(2855, 1650)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -455,8 +486,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@13
-			    location   	(2745, 1577)
+			    Parent_View 	@12
+			    location   	(2751, 1599)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	208
@@ -470,7 +501,7 @@
 			height     	126
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::PrintWriter" @14
+		    (object ClassView "Class" "Logical View::PrintWriter" @13
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -485,7 +516,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@14
+			    Parent_View 	@13
 			    location   	(3296, 1189)
 			    fill_color 	13434879
 			    nlines     	1
@@ -500,7 +531,7 @@
 			height     	126
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::BufferedWriter" @15
+		    (object ClassView "Class" "Logical View::BufferedWriter" @14
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -515,7 +546,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@15
+			    Parent_View 	@14
 			    location   	(2149, 1195)
 			    fill_color 	13434879
 			    nlines     	1
@@ -530,47 +561,47 @@
 			height     	126
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @16
+		    (object InheritView "" @15
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB01CB0069"
-			client     	@12
+			client     	@11
 			supplier   	@4
 			vertices   	(list Points
-			    (2851, 1182)
-			    (2854, 906))
+			    (2855, 1195)
+			    (2855, 906))
 			line_style 	0)
-		    (object InheritView "" @17
+		    (object InheritView "" @16
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB01CD0376"
-			client     	@15
+			client     	@14
 			supplier   	@4
 			vertices   	(list Points
 			    (2380, 1182)
 			    (2764, 906))
 			line_style 	0)
-		    (object InheritView "" @18
+		    (object InheritView "" @17
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB01D40227"
-			client     	@14
+			client     	@13
 			supplier   	@4
 			vertices   	(list Points
 			    (3321, 1176)
 			    (2944, 906))
 			line_style 	0)
-		    (object InheritView "" @19
+		    (object InheritView "" @18
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB01DA0015"
-			client     	@13
-			supplier   	@12
+			client     	@12
+			supplier   	@11
 			vertices   	(list Points
-			    (2849, 1564)
-			    (2850, 1309))
+			    (2855, 1586)
+			    (2855, 1322))
 			line_style 	0)
-		    (object NoteView @20
+		    (object NoteView @19
 			location   	(756, 681)
 			font       	(object Font
 			    size       	10
@@ -582,7 +613,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@20
+			    Parent_View 	@19
 			    location   	(618, 621)
 			    fill_color 	13434879
 			    nlines     	2
@@ -593,8 +624,8 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object NoteView @21
-			location   	(3147, 678)
+		    (object NoteView @20
+			location   	(3206, 678)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -605,36 +636,36 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@21
-			    location   	(3009, 618)
+			    Parent_View 	@20
+			    location   	(3009, 619)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	240
+			    max_width  	359
 			    justify    	1
 			    label      	"字符输出流")
 			line_color 	3342489
 			fill_color 	13434879
-			width      	300
-			height     	132)
-		    (object AttachView "" @22
+			width      	419
+			height     	131)
+		    (object AttachView "" @21
 			stereotype 	TRUE
 			line_color 	3342489
 			client     	@3
-			supplier   	@20
+			supplier   	@19
 			vertices   	(list Points
 			    (1058, 803)
 			    (906, 741))
 			line_style 	0)
-		    (object AttachView "" @23
+		    (object AttachView "" @22
 			stereotype 	TRUE
 			line_color 	3342489
 			client     	@4
-			supplier   	@21
+			supplier   	@20
 			vertices   	(list Points
-			    (2945, 790)
-			    (3028, 744))
+			    (2945, 798)
+			    (3064, 743))
 			line_style 	0)
-		    (object ClassView "Class" "Logical View::AutoCloseable" @24
+		    (object ClassView "Class" "Logical View::AutoCloseable" @23
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -649,7 +680,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@24
+			    Parent_View 	@23
 			    location   	(1872, 814)
 			    fill_color 	13434879
 			    nlines     	1
@@ -657,7 +688,7 @@
 			    justify    	0
 			    label      	"AutoCloseable")
 			stereotype 	(object ItemLabel
-			    Parent_View 	@24
+			    Parent_View 	@23
 			    location   	(1872, 764)
 			    fill_color 	13434879
 			    anchor     	10
@@ -674,27 +705,27 @@
 			height     	182
 			annotation 	8
 			autoResize 	TRUE)
-		    (object RealizeView "" @25
+		    (object RealizeView "" @24
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB0222028D"
 			client     	@3
-			supplier   	@24
+			supplier   	@23
 			vertices   	(list Points
 			    (1245, 843)
 			    (1862, 843))
 			line_style 	0)
-		    (object RealizeView "" @26
+		    (object RealizeView "" @25
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB02290014"
 			client     	@4
-			supplier   	@24
+			supplier   	@23
 			vertices   	(list Points
 			    (2764, 843)
 			    (2173, 843))
 			line_style 	0)
-		    (object ClassView "Class" "Logical View::Appendable" @27
+		    (object ClassView "Class" "Logical View::Appendable" @26
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -709,7 +740,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@27
+			    Parent_View 	@26
 			    location   	(2869, 261)
 			    fill_color 	13434879
 			    nlines     	1
@@ -717,7 +748,7 @@
 			    justify    	0
 			    label      	"Appendable")
 			stereotype 	(object ItemLabel
-			    Parent_View 	@27
+			    Parent_View 	@26
 			    location   	(2869, 211)
 			    fill_color 	13434879
 			    anchor     	10
@@ -734,17 +765,17 @@
 			height     	182
 			annotation 	8
 			autoResize 	TRUE)
-		    (object RealizeView "" @28
+		    (object RealizeView "" @27
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB024E0392"
 			client     	@4
-			supplier   	@27
+			supplier   	@26
 			vertices   	(list Points
 			    (2869, 779)
 			    (2971, 381))
 			line_style 	0)
-		    (object NoteView @29
+		    (object NoteView @28
 			location   	(1606, 78)
 			font       	(object Font
 			    size       	10
@@ -756,7 +787,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@29
+			    Parent_View 	@28
 			    location   	(1468, 18)
 			    fill_color 	13434879
 			    nlines     	2
@@ -767,7 +798,7 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object ClassView "Class" "Logical View::Readable" @30
+		    (object ClassView "Class" "Logical View::Readable" @29
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -782,7 +813,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@30
+			    Parent_View 	@29
 			    location   	(1031, 277)
 			    fill_color 	13434879
 			    nlines     	1
@@ -790,7 +821,7 @@
 			    justify    	0
 			    label      	"Readable")
 			stereotype 	(object ItemLabel
-			    Parent_View 	@30
+			    Parent_View 	@29
 			    location   	(1031, 227)
 			    fill_color 	13434879
 			    anchor     	10
@@ -807,26 +838,26 @@
 			height     	182
 			annotation 	8
 			autoResize 	TRUE)
-		    (object RealizeView "" @31
+		    (object RealizeView "" @30
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5FDB02D60245"
 			client     	@3
-			supplier   	@30
+			supplier   	@29
 			vertices   	(list Points
 			    (1152, 779)
 			    (1155, 397))
 			line_style 	0)
-		    (object AttachView "" @32
+		    (object AttachView "" @31
 			stereotype 	TRUE
 			line_color 	3342489
 			client     	@1
-			supplier   	@29
+			supplier   	@28
 			vertices   	(list Points
 			    (1702, 214)
 			    (1652, 144))
 			line_style 	0)
-		    (object NoteView @33
+		    (object NoteView @32
 			location   	(2628, 65)
 			font       	(object Font
 			    size       	10
@@ -838,7 +869,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@33
+			    Parent_View 	@32
 			    location   	(2490, 5)
 			    fill_color 	13434879
 			    nlines     	2
@@ -849,14 +880,56 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object AttachView "" @34
+		    (object AttachView "" @33
 			stereotype 	TRUE
 			line_color 	3342489
 			client     	@2
-			supplier   	@33
+			supplier   	@32
 			vertices   	(list Points
 			    (2588, 208)
 			    (2609, 131))
+			line_style 	0)
+		    (object NoteView @34
+			location   	(1891, 594)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@34
+			    location   	(1625, 497)
+			    fill_color 	13434879
+			    nlines     	3
+			    max_width  	497
+			    justify    	1
+			    label      	"我看的java8的文档，包含一个自动关闭流的接口")
+			line_color 	3342489
+			fill_color 	13434879
+			width      	557
+			height     	206)
+		    (object AttachView "" @35
+			stereotype 	TRUE
+			line_color 	3342489
+			client     	@23
+			supplier   	@34
+			vertices   	(list Points
+			    (1971, 751)
+			    (1943, 697))
+			line_style 	0)
+		    (object InheritView "" @36
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5FDC2281037E"
+			client     	@9
+			supplier   	@8
+			vertices   	(list Points
+			    (1150, 1414)
+			    (1150, 1222))
 			line_style 	0)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5FDAFFF10187"
