@@ -33,11 +33,12 @@ public class P217 {
     public static void main(String[] args) {
         Account act = new Account("actno", 10000);
         //Processor processor = new Processor(act);
-        Thread t1 = new Thread(new Processor(act));
-        Thread t2 = new Thread(new Processor(act));
-        Thread t3 = new Thread(new Processor(act));
-        Thread t4 = new Thread(new Processor(act));
-        Thread t5 = new Thread(new Processor(act));
+        Processor processor = new Processor(act);
+        Thread t1 = new Thread(processor);
+        Thread t2 = new Thread(processor);
+        Thread t3 = new Thread(processor);
+        Thread t4 = new Thread(processor);
+        Thread t5 = new Thread(processor);
         t1.start();
         t2.start();
         t3.start();
@@ -45,11 +46,16 @@ public class P217 {
         t5.start();
     }
 
+    /**
+     * 目前代码分析：
+     * 在经过测试后，打印的结果显示来看，没有把线程锁住；
+     * <p>
+     *     经过测试，在synchronized内部打印结果，确实的锁住了，在锁的外部打印造成的显示没有锁住。
+     * </p>
+     */
     static class Account {
 
-        final Object obj = new Object();
-
-        String actno;
+        private String actno;
         private double balance;
 
         public Account() {
@@ -92,6 +98,7 @@ public class P217 {
 //                    e.printStackTrace();
 //                }
                 this.setBalance(after);
+                System.out.println("取款1000.00成功，余额：" + this.getBalance());
             }
         }
     }
@@ -107,7 +114,9 @@ public class P217 {
         @Override
         public void run() {
             this.account.withdraw(1000);
-            System.out.println("取款1000.00成功，余额：" + account.getBalance());
         }
     }
+
+
+
 }
