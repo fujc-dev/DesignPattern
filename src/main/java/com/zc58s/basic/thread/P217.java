@@ -55,12 +55,11 @@ public class P217 {
      */
     static class Account {
 
+        private static Object obj = new Object();
+
         private String actno;
         private double balance;
 
-        public Account() {
-
-        }
 
         public Account(String actno, double balance) {
             this.actno = actno;
@@ -90,7 +89,7 @@ public class P217 {
          */
         public void withdraw(double money) {
             System.out.println(this.hashCode());
-            synchronized (this) {
+            synchronized (obj) {
                 double after = this.balance - money;
 //                try {
 //                    Thread.sleep(1);
